@@ -1,0 +1,21 @@
+{
+  "name": "generator-ais-ui",
+  "version": "1.0.0",
+  "description": "Yeoman generator for Applied Information Sciences (AIS) projects.",
+  "keywords": [
+    "yeoman-generator",
+    "AIS",
+    "Applied Information Sciences"
+  ],
+  "homepage": "https://github.com/bowmanmc/generator-ais-ui",
+  "bugs": "https://github.com/bowmanmc/generator-ais-ui/issues",
+  "contributors": [
+    {
+      "name": "Michael Bowman",
+      "email": "bowmanmc@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20.1"
+  }
+}
