@@ -15,6 +15,14 @@ var AisGenerator = generators.Base.extend({
             done();
         }.bind(this));
 
+    },
+
+    projectfiles: function() {
+        // Process files
+        this.template('_gulpfile.js', 'gulpfile.js');
+
+        // doesn't copy empty directories...
+        this.directory('app');
     }
 
 });
