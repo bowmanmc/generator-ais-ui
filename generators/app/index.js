@@ -9,9 +9,10 @@ var AisGenerator = generators.Base.extend({
             type: 'input',
             name: 'name',
             message: 'Your project name',
-            default: this.appname
+            default: this.appname,
+            store: true
         }, function(answers) {
-            this.log(answers.name);
+            this.name = answers.name;
             done();
         }.bind(this));
 
@@ -37,6 +38,9 @@ var AisGenerator = generators.Base.extend({
         }
 
         // Process files
+        this.template('_.bowerrc', '.bowerrc');
+        this.template('_.gitignore', '.gitignore');
+        this.template('_.jshintrc', '.jshintrc');
         this.template('_bower.json', 'bower.json');
         this.template('_gulpfile.js', 'gulpfile.js');
         this.template('_karma.conf.js', 'karma.conf.js');
@@ -45,6 +49,8 @@ var AisGenerator = generators.Base.extend({
         // doesn't copy empty directories...
         this.directory('app');
         this.directory('spec');
+
+        this.installDependencies();
     }
 
 });

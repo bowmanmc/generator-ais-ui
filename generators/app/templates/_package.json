@@ -1,0 +1,50 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/aisdayton/<%= name %>"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-debug": "*",
+    "gulp-imagemin": "*",
+    "gulp-jasmine": "*",
+    "gulp-karma": "*",
+    "gulp-load-plugins": "*",
+    "gulp-minify-css": "*",
+    "gulp-open": "*",
+    "gulp-rename": "*",
+    "gulp-rev": "*",
+    "gulp-run": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-tap": "*",
+    "gulp-uglify": "*",
+    "gulp-uncss": "*",
+    "gulp-usemin": "*",
+    "gulp-watch": "*",
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-coverage": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-spec-reporter": "*",
+    "main-bower-files": "*",
+    "moment": "*",
+    "phantomjs": "*",
+    "proxy-middleware": "*",
+    "run-sequence": "*",
+    "sync-exec": "*",
+    "wiredep": "*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "dependencies": {
+    "momentjs": "*",
+    "d3": "*",
+    "jquery": "*",
+    "angular": "*",
+    "angular-resource": "*",
+    "angular-cookies": "*",
+    "angular-sanitize": "*",
+    "angular-route": "*",
+    "angular-ui-bootstrap-bower": "*",
+    "bootstrap-sass": "*",
+    "fontawesome": "*",
+    "sweetalert": "*",
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
+  }
+}

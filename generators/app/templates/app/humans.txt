@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Applied Information Sciences
+    1. Front End Web Developer – Jerome Horwitz
+
+# THANKS
+
+    Applied Information Sciences
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, JavaScript, Sass
+    AngularJS, Bootstrap, Font Awesome, Sweet Alert, lodash, jQuery
+    Node.js, Gulp, Bower, Browser Sync, Jasmine, Karma, Sass
