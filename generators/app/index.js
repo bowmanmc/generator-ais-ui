@@ -44,6 +44,7 @@ var AisGenerator = generators.Base.extend({
 
         // doesn't copy empty directories...
         this.directory('app');
+        this.directory('spec');
     }
 
 });
