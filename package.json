@@ -5,10 +5,15 @@
   "keywords": [
     "yeoman-generator",
     "AIS",
-    "Applied Information Sciences"
+    "Applied Information Sciences",
+    "ais-ui"
   ],
   "homepage": "https://github.com/bowmanmc/generator-ais-ui",
   "bugs": "https://github.com/bowmanmc/generator-ais-ui/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bowmanmc/generator-ais-ui.git"
+  },
   "contributors": [
     {
       "name": "Michael Bowman",
