@@ -147,18 +147,22 @@ gulp.task('sass', function () {
 });
 
 // thanks @esvendsen !!!
-gulp.task('vendor', ['vendor-js']);
 gulp.task('vendor-js', function() {
     var jsRegex = (/.*\.js$/i);
     return gulp.src(mbf({ filter: jsRegex }))
         //.pipe(debug())
-        .pipe(sourcemaps.init())
         .pipe(concat('vendor.js'))
-        //.pipe(gulp.dest('app/scripts'))
+        .pipe(gulp.dest('app/scripts'));
+});
+// identify vendor-js as a dependency which must complete before vendor-uglify can run
+gulp.task('vendor-uglify', ['vendor-js'], function() {
+    return gulp.src('app/scripts/vendor.js')
+        .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('app/scripts'));
 });
+gulp.task('vendor', ['vendor-js','vendor-uglify']);
 
 gulp.task('js', function() {
     return gulp.src('app/modules/**/*.js')
