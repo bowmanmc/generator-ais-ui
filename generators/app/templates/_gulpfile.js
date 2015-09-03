@@ -160,6 +160,7 @@ gulp.task('vendor-uglify', ['vendor-js'], function() {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
+		.pipe(sourcemaps.write())
         .pipe(gulp.dest('app/scripts'));
 });
 gulp.task('vendor', ['vendor-js','vendor-uglify']);
